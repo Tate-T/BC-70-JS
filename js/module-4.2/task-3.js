@@ -6,16 +6,38 @@ const user = {
 	user: 'MickyMouse',
 	email: 'micky@gmail.com',
 	password: 'micky123',
+	// login() {
+	// 	if (
+	// 		this.email !==
+	// 			prompt('Your email') ||
+	// 		this.password !==
+	// 			prompt('Pass')
+	// 	) {
+	// 		return 'Wrong e-mail and pass, check them';
+	// 	}
+
+	// 	else {
+	// 		return "Congratulation. Your log in here!"
+	// 	}
+	// },
+	// Або 
 	login() {
 		if (
-			this.email !==
+			this.email ===
 				prompt('Your email') &&
-			this.password !==
+			this.password ===
 				prompt('Pass')
 		) {
-			return 'Wrong e-mail and pass, check them';
+			
+			return "Congratulation. Your log in here!";
+		}
+
+		else {
+			return 'Wrong e-mail and pass, check them'
 		}
 	},
 };
 
 console.log(user.login());
+
+
