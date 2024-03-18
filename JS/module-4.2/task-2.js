@@ -64,3 +64,18 @@ function findTopStudent(students) {
 	}
 	return topStudents;
 }
+
+// variant 3
+function findTopStudent(students) {
+  let maxRange = students[0].averageRange;
+  let topSTudents = [];
+  for (const student of students) {
+    if (student.averageRange > maxRange) {
+      maxRange = student.averageRange;
+      topSTudents = [student];
+    } else if (student.averageRange === maxRange) {
+      topSTudents.push(student);
+    }
+  }
+  return topSTudents;
+}
