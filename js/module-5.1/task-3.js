@@ -59,27 +59,3 @@
 //   arrayNamesFun.map((keyUser) => keyUser.nameUser);
 // console.log(createdArrayNames(developersTeam));
 
-const product = ["🍎", "🍇", "🍋", "🍓"];
-
-const products = [
-  {
-    productName: "🍎",
-    price: 5,
-    quantity: 8,
-  },
-  {
-    productName: "🍇",
-    price: 2,
-    quantity: 6,
-  },
-  {
-    productName: "🍋",
-    price: 4,
-    quantity: 6,
-  },
-  {
-    productName: "🍓",
-    price: 1,
-    quantity: 3,
-  },
-];
