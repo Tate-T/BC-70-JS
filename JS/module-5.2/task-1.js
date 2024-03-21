@@ -44,3 +44,5 @@ const viewBasket = (products) =>
     "You have in the basket:"
   );
 console.log(viewBasket(products));
+
+
