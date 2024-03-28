@@ -1,8 +1,12 @@
 .article-button {
     background-color: chartreuse;
     border-radius: 10px;
-    box-shadow: 2px 3px 4px 5px skyblue;
+    box-shadow: 2px 3px 4px 5px skyblue
+
+
+}
+
+.hide {
+    opacity: 0;
     
-
-
 }
