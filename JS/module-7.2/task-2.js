@@ -31,32 +31,31 @@ document.body.append(box);
 window.addEventListener("keydown", (event) => {
   switch (event.code) {
     case "ArrowDown":
-      if (top < 100 && box.of > 25) {
+      if (box.offsetTop < window.innerHeight - box.offsetHeight / 2) {
         box.style.top = `calc(${top + 1}%)`;
         top += 1;
       }
       break;
 
     case "ArrowUp":
-      if (box.offsetTop > 25) {
+      if (box.offsetTop > box.offsetHeight / 2) {
         box.style.top = `calc(${top - 1}%)`;
         top -= 1;
       }
       break;
 
     case "ArrowLeft":
-      if (box.offsetLeft > 25) {
+      if (box.offsetLeft > box.offsetWidth / 2) {
         box.style.left = `calc(${left - 1}%)`;
         left -= 1;
       }
       break;
 
     case "ArrowRight":
-      if (left < 100 && box.offsetLeft > 25) {
+      if (box.offsetLeft < window.innerWidth - box.offsetWidth / 2) {
         box.style.left = `calc(${left + 1}%)`;
         left += 1;
       }
       break;
   }
 });
-console.log(window);
