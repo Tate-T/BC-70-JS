@@ -1,3 +1,9 @@
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
 .article-button {
     background-color: chartreuse;
     border-radius: 10px;
