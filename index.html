@@ -1,24 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
-  <link rel="stylesheet" href="styles.css" />
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-</head>
+  <body>
+    <canvas id="sales-chart"></canvas>
 
-<body>
-  <canvas id="sales-chart"></canvas>
-
-  <!-- <ul class="products-list"></ul>
+    <!-- <ul class="products-list"></ul>
 
     <div class="backdrop">
       <div class="modal"></div>
     </div> -->
 
-  <!-- <ul class="product-list"></ul>
+    <!-- <ul class="product-list"></ul>
 
     <ul class="list">
       <li class="item">
@@ -31,98 +30,97 @@
       <li class="item"><a href="" class="link">link5</a></li>
     </ul> -->
 
-  <!-- <script src="./JS/module-1.1/task2.js" type="module"></script> -->
-  <!--<script type="module" src="./JS/module-1.1/task3.js"></script> -->
-  <!-- <script type="module" src="./JS/module-1.1/task4.js"></script> -->
-  <!-- <script type="module" src="./JS/module-1.2/task1.js"></script> -->
-  <!-- <script type="module" src="./JS/module-1.2/task2.js"></script> -->
-  <!-- <script type="module" src="./JS/module-1.2/task3.js"></script> -->
-  <!-- <script type="module" src="./JS/module-1.2/task4.js"></script> -->
-  <!-- <script type="module" src="./JS/module-1.2/task5.js"></script> -->
-  <!-- <script type="module" src="./JS/module-1.2/task6.js"></script> -->
-  <!-- <script type="module" src="./JS/module-2.1/task-1.js"></script> -->
-  <!-- <script type="module" src="./JS/module-2.1/task-2.js"></script> -->
-  <!-- <script type="module" src="./JS/module-2.1/task-3.js"></script> -->
-  <!-- <script type="module" src="./JS/module-2.1/task-4.js"></script> -->
-  <!-- <script type="module" src="./js/module-2.1/task-5.js"></script> -->
-  <!-- <script type="module" src="./js/module-2.2/task-1.js"></script> -->
-  <!-- <script type="module" src="./js/module-2.2/task-2.js"></script> -->
-  <!-- <script type="module" src="./js/module-2.2/task-3.js"></script> -->
-  <!-- <script type="module" src="./js/module-2.2/task-4.js"></script> -->
-  <!-- <script type="module" src="./js/module-2.2/task-5.js"></script> -->
-  <!-- <script type="module" src="./js/module-2.2/task-6.js"></script> -->
-  <!--<script type="module" src="./js/module-2.2/task-7.js"></script>-->
-  <!-- <script type="module" src="./js/module-3.1/task1.js"></script> -->
-  <!-- <script type="module" src="./js/module-3.1/task2.js"></script> -->
-  <!-- <script type="module" src="./js/module-3.1/task3.js"></script> -->
-  <!-- <script type="module" src="./js/module-3.1/task4.js"></script> -->
-  <!-- <script type="module" src="./js/module-3.1/task5.js"></script> -->
-  <!-- <script type="module" src="./js/module-3.1/task6.js"></script> -->
-  <!-- <script type="module" src="./js/module-3.1/task7.js"></script> -->
-  <!-- <script type="module" src="./js/module-3.2/task-1.js"></script> -->
-  <!-- <script type="module" src="./js/module-3.2/task-2.js"></script> -->
-  <!-- <script type="module" src="./js/module-3.2/task-3.js"></script> -->
-  <!-- <script type="module" src="./js/module-3.2/task-4.js"></script> -->
-  <!-- <script type="module" src="./js/module-3.2/task-5.js"></script> -->
-  <!-- <script type="module" src="./js/module-3.2/task-6.js"></script> -->
-  <!--<script type="module" src="./js/module-4.1/task1.js"></script>-->
-  <!-- <script type="module" src="./js/module-4.1/task-2.js"></script> -->
-  <!-- <script type="module" src="./js/module-4.1/task-3.js"></script> -->
-  <!-- <script type="module" src="./js/module-4.1/task-4.js"></script> -->
-  <!-- <script type="module" src="./js/module-4.1/task-5.js"></script> -->
-  <!-- <script type="module" src="./js/module-4.2/task-1.js"></script> -->
-  <!-- <script type="module" src="./js/module-4.2/task-2.js"></script> -->
-  <!-- <script src="./js/module-4.2/task-3.js" type="module"></script>   -->
-  <!-- <script src="./js/module-4.2/task-4.js" type="module"></script> -->
-  <!-- <script src="./js/module-4.2/task-5.js" type="module"></script> -->
-  <!-- <script src="./js/module-4.2/task-6.js" type="module"></script> -->
-  <!-- <script src="./js/module-4.3/task-1.js" type="module"></script> -->
-  <!-- <script src="./js/module-4.3/task-2.js" type="module"></script> -->
-  <!-- <script type="module" src="./js/5.1/task-1.js"></script> -->
-  <!-- <script type="module" src="./js/module-5.1/task-2.js"></script> -->
-  <!-- <script type="module" src="./js/module-5.1/task-3.js"></script> -->
-  <!-- <script type="module" src="./js/module-5.1/task-4.js"></script> -->
-  <!-- <script type="module" src="./js/module-5.2/task-1.js"></script> -->
-  <!-- <script type="module" src="./js/module-5.2/task-2.js"></script> -->
-  <!-- <script type="module" src="./js/module-5.2/task-3.js"></script> -->
-  <!-- <script type="module" src="./js/module-6-1/task-1.js"></script> -->
-  <!-- <script type="module" src="./js/module-6-1/task-2.js"></script> -->
-  <!-- <script type="module" src="./js/module-6.2/task-1.js"></script> -->
-  <!-- <script type="module" src="./js/module-6.2/task-2.js"></script> -->
-  <!-- <script type="module" src="./js/module-6.2/task-3.js"></script> -->
-  <!-- <script type="module" src="./js/module-6.2/task-4.js"></script> -->
-  <!-- <script type="module" src="./js/module-6.2/task-5.js"></script> -->
-  <!-- <script type="module" src="./js/module-6.2/task-6.js"></script> -->
-  <!-- <script type="module" src="./js/module-6.2/task-7.js"></script> -->
-  <!-- <script type="module" src="./js/module-6.2/task-8.js"></script> -->
-  <!-- <script type="module" src="./js/module-6.2/task-9.js"></script> -->
-  <!-- <script type="module" src="./js/module-7.1/task1.js"></script>
+    <!-- <script src="./JS/module-1.1/task2.js" type="module"></script> -->
+    <!--<script type="module" src="./JS/module-1.1/task3.js"></script> -->
+    <!-- <script type="module" src="./JS/module-1.1/task4.js"></script> -->
+    <!-- <script type="module" src="./JS/module-1.2/task1.js"></script> -->
+    <!-- <script type="module" src="./JS/module-1.2/task2.js"></script> -->
+    <!-- <script type="module" src="./JS/module-1.2/task3.js"></script> -->
+    <!-- <script type="module" src="./JS/module-1.2/task4.js"></script> -->
+    <!-- <script type="module" src="./JS/module-1.2/task5.js"></script> -->
+    <!-- <script type="module" src="./JS/module-1.2/task6.js"></script> -->
+    <!-- <script type="module" src="./JS/module-2.1/task-1.js"></script> -->
+    <!-- <script type="module" src="./JS/module-2.1/task-2.js"></script> -->
+    <!-- <script type="module" src="./JS/module-2.1/task-3.js"></script> -->
+    <!-- <script type="module" src="./JS/module-2.1/task-4.js"></script> -->
+    <!-- <script type="module" src="./js/module-2.1/task-5.js"></script> -->
+    <!-- <script type="module" src="./js/module-2.2/task-1.js"></script> -->
+    <!-- <script type="module" src="./js/module-2.2/task-2.js"></script> -->
+    <!-- <script type="module" src="./js/module-2.2/task-3.js"></script> -->
+    <!-- <script type="module" src="./js/module-2.2/task-4.js"></script> -->
+    <!-- <script type="module" src="./js/module-2.2/task-5.js"></script> -->
+    <!-- <script type="module" src="./js/module-2.2/task-6.js"></script> -->
+    <!--<script type="module" src="./js/module-2.2/task-7.js"></script>-->
+    <!-- <script type="module" src="./js/module-3.1/task1.js"></script> -->
+    <!-- <script type="module" src="./js/module-3.1/task2.js"></script> -->
+    <!-- <script type="module" src="./js/module-3.1/task3.js"></script> -->
+    <!-- <script type="module" src="./js/module-3.1/task4.js"></script> -->
+    <!-- <script type="module" src="./js/module-3.1/task5.js"></script> -->
+    <!-- <script type="module" src="./js/module-3.1/task6.js"></script> -->
+    <!-- <script type="module" src="./js/module-3.1/task7.js"></script> -->
+    <!-- <script type="module" src="./js/module-3.2/task-1.js"></script> -->
+    <!-- <script type="module" src="./js/module-3.2/task-2.js"></script> -->
+    <!-- <script type="module" src="./js/module-3.2/task-3.js"></script> -->
+    <!-- <script type="module" src="./js/module-3.2/task-4.js"></script> -->
+    <!-- <script type="module" src="./js/module-3.2/task-5.js"></script> -->
+    <!-- <script type="module" src="./js/module-3.2/task-6.js"></script> -->
+    <!--<script type="module" src="./js/module-4.1/task1.js"></script>-->
+    <!-- <script type="module" src="./js/module-4.1/task-2.js"></script> -->
+    <!-- <script type="module" src="./js/module-4.1/task-3.js"></script> -->
+    <!-- <script type="module" src="./js/module-4.1/task-4.js"></script> -->
+    <!-- <script type="module" src="./js/module-4.1/task-5.js"></script> -->
+    <!-- <script type="module" src="./js/module-4.2/task-1.js"></script> -->
+    <!-- <script type="module" src="./js/module-4.2/task-2.js"></script> -->
+    <!-- <script src="./js/module-4.2/task-3.js" type="module"></script>   -->
+    <!-- <script src="./js/module-4.2/task-4.js" type="module"></script> -->
+    <!-- <script src="./js/module-4.2/task-5.js" type="module"></script> -->
+    <!-- <script src="./js/module-4.2/task-6.js" type="module"></script> -->
+    <!-- <script src="./js/module-4.3/task-1.js" type="module"></script> -->
+    <!-- <script src="./js/module-4.3/task-2.js" type="module"></script> -->
+    <!-- <script type="module" src="./js/5.1/task-1.js"></script> -->
+    <!-- <script type="module" src="./js/module-5.1/task-2.js"></script> -->
+    <!-- <script type="module" src="./js/module-5.1/task-3.js"></script> -->
+    <!-- <script type="module" src="./js/module-5.1/task-4.js"></script> -->
+    <!-- <script type="module" src="./js/module-5.2/task-1.js"></script> -->
+    <!-- <script type="module" src="./js/module-5.2/task-2.js"></script> -->
+    <!-- <script type="module" src="./js/module-5.2/task-3.js"></script> -->
+    <!-- <script type="module" src="./js/module-6-1/task-1.js"></script> -->
+    <!-- <script type="module" src="./js/module-6-1/task-2.js"></script> -->
+    <!-- <script type="module" src="./js/module-6.2/task-1.js"></script> -->
+    <!-- <script type="module" src="./js/module-6.2/task-2.js"></script> -->
+    <!-- <script type="module" src="./js/module-6.2/task-3.js"></script> -->
+    <!-- <script type="module" src="./js/module-6.2/task-4.js"></script> -->
+    <!-- <script type="module" src="./js/module-6.2/task-5.js"></script> -->
+    <!-- <script type="module" src="./js/module-6.2/task-6.js"></script> -->
+    <!-- <script type="module" src="./js/module-6.2/task-7.js"></script> -->
+    <!-- <script type="module" src="./js/module-6.2/task-8.js"></script> -->
+    <!-- <script type="module" src="./js/module-6.2/task-9.js"></script> -->
+    <!-- <script type="module" src="./js/module-7.1/task1.js"></script>
     <script type="module" src="./js/module-7.1/task2.js"></script> -->
-  <!-- <script type="module" src="./js/module-7.1/task3.js"></script> -->
-  <!-- <script type="module" src="./js/module-7.1/task4.js"></script> -->
-  <!-- <script type="module" src="./js/module-7.1/task5.js"></script> -->
-  <!-- <script type="module" src="./js/module-7.2/task-1.js"></script> -->
-  <!-- <script type="module" src="./js/module-7.2/task-2.js"></script> -->
-  <!-- <script type="module" src="./js/module-7.2/task-3.js"></script> -->
-  <!-- <script type="module" src="./js/module-7.2/task-4.js"></script> -->
-  <!-- <script type="module" src="./js/module-7.2/task-5.js"></script> -->
-  <!-- <script type="module" src="./js/module-7.2/task-6.js"></script> -->
-  <!-- <script type="module" src="./js/module-8.1/task-1.js"></script> -->
-  <!-- <script type="module" src="./js/module-8.1/test.js"></script> -->
-  <!-- <script type="module" src="./js/modul-8-2/task-1.js"></script> -->
-  <!-- <script type="module" src="./js/module-8.2/task-2.js"></script> -->
-  <!-- <script type="module" src="./js/module-8.2/task-3.js"></script> -->
-  <!-- <script type="module" src="./js/module-8.2/task-4.js"></script> -->
-  <!-- <script type="module" src="./js/module-8.2/task-5.js"></script> -->
-  <!-- <script type="module" src="./js/module-8.2/task-6.js"></script> -->
-  <!-- <script type="module" src="./js/module-8.2/task-7.js"></script> -->
-  <!-- <script type="module" src="./js/module-8.2/task-8.js"></script> -->
-  <!-- <script type="module" src="./js/module-8.2/task-9.js"></script> -->
-  <!-- <script type="module" src="./js/module-8.2/task-10.js"></script> -->
-  <script type="module" src="./js/module-9.1/task-1.js"></script>
-  <script type="module" src="./js/module-9.1/task-2.js"></script>
-  <script type="module" src="./js/module-9.1/task-3.js"></script>
-
-</body>
-
+    <!-- <script type="module" src="./js/module-7.1/task3.js"></script> -->
+    <!-- <script type="module" src="./js/module-7.1/task4.js"></script> -->
+    <!-- <script type="module" src="./js/module-7.1/task5.js"></script> -->
+    <!-- <script type="module" src="./js/module-7.2/task-1.js"></script> -->
+    <!-- <script type="module" src="./js/module-7.2/task-2.js"></script> -->
+    <!-- <script type="module" src="./js/module-7.2/task-3.js"></script> -->
+    <!-- <script type="module" src="./js/module-7.2/task-4.js"></script> -->
+    <!-- <script type="module" src="./js/module-7.2/task-5.js"></script> -->
+    <!-- <script type="module" src="./js/module-7.2/task-6.js"></script> -->
+    <!-- <script type="module" src="./js/module-8.1/task-1.js"></script> -->
+    <!-- <script type="module" src="./js/module-8.1/test.js"></script> -->
+    <!-- <script type="module" src="./js/modul-8-2/task-1.js"></script> -->
+    <!-- <script type="module" src="./js/module-8.2/task-2.js"></script> -->
+    <!-- <script type="module" src="./js/module-8.2/task-3.js"></script> -->
+    <!-- <script type="module" src="./js/module-8.2/task-4.js"></script> -->
+    <!-- <script type="module" src="./js/module-8.2/task-5.js"></script> -->
+    <!-- <script type="module" src="./js/module-8.2/task-6.js"></script> -->
+    <!-- <script type="module" src="./js/module-8.2/task-7.js"></script> -->
+    <!-- <script type="module" src="./js/module-8.2/task-8.js"></script> -->
+    <!-- <script type="module" src="./js/module-8.2/task-9.js"></script> -->
+    <!-- <script type="module" src="./js/module-8.2/task-10.js"></script> -->
+    <script type="module" src="./js/module-9.1/task-1.js"></script>
+    <script type="module" src="./js/module-9.1/task-2.js"></script>
+    <script type="module" src="./js/module-9.1/task-3.js"></script>
+    <script type="module" src="./js/module-9.1/task-4.js"></script>
+  </body>
 </html>
