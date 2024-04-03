@@ -17,7 +17,7 @@ function addKeyToLS(obj) {
 addKeyToLS(student)
 
 // Створіть функцію, яка буде видаляти всі значення з localStorage.
-function removeLs() {
-    localStorage.clear()
-}
-removeLs()
+// function removeLs() {
+//     localStorage.clear()
+// }
+// removeLs()
