@@ -81,10 +81,39 @@ a {
   background-color: black;
   color: antiquewhite;
 }
-.login-form{
+.login-form {
   margin-top: 20px;
   max-width: 400px;
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+.calendar {
+  display: flex;
+  flex-direction: column;
+}
+.calendar > div {
+  gap: 20px;
+  display: flex;
+}
+.timer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 40px;
+  margin: 0 auto;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.timer > div{
+  display: flex;
+  gap: 10px;
+}
+.timer p{
+  margin: 0;
+}
+.timer > div> p:first-child::after {
+  content: " :";
+}
+.timer-msg{
+  font-size: 20px;
 }
