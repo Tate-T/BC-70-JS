@@ -18,17 +18,13 @@
 // parityCheck(numbArr).then((value) => {console.log(value);}).catch((error) => console.log(error));
 
 
-//не працює!!!!
-// function parityCheck(){
-//     const promise = new Promise();
-//     return promise.resolve([2, 4, 6, 8, 9]); 
-// }
+// не працює!!!!
 
 
+// Promise.resolve([2, 4, 6, 8]).then((arr) => {
 
-// parityCheck().then((arr) => {
 //     if(arr.every(e => e % 2 === 0)){
 //         console.log("Всі числа парні");
 //     }
 // })
-// .catch((error) => console.log(error));
+// Promise.reject('error').catch((error) => console.log(error));
