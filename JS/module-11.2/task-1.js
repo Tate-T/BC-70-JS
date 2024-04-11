@@ -32,5 +32,5 @@ function createMarkUp(user) {
 
 function createList(users) {
   const markUp = users.map((user) => createMarkUp(user)).join("");
-  listEl.insertAdjacentHTML("beforeend", markUp);
+  listEl.insertAdjacentHTML("beforeend", markUp); 
 }
