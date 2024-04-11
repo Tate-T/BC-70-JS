@@ -14,6 +14,7 @@ function getUsers() {
   });
   return fetchData;
 }
+
 getUsers()
   .then((response) =>{
     // console.log(response);
@@ -21,14 +22,6 @@ getUsers()
   })
   .catch((err) => err);
 
-getUsers()
-  .then((response) => {
-    console.log(response);
-    return response;
-  })
-  .catch((err) => {
-    return err;
-  });
 
 function createMarkUp(user) {
   const markUP = `<li>
