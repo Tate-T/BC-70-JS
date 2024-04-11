@@ -16,25 +16,16 @@ function getUsers() {
 }
 getUsers()
   .then((response) =>{
-    // console.log(response);
+    console.log(response);
     createList(response)
   })
   .catch((err) => err);
-
-getUsers()
-  .then((response) => {
-    console.log(response);
-    return response;
-  })
-  .catch((err) => {
-    return err;
-  });
 
 function createMarkUp(user) {
   const markUP = `<li>
         <h2>Login: ${user.login}</h2>
         <p>Id: ${user.id}</p>
-        <img src="${user.avatar_url} "alt="">
+        <img src="${user.avatar_url}"alt="">
       </li>`;
   return markUP;
 }
