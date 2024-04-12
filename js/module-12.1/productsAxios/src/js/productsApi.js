@@ -12,6 +12,7 @@ export const getProducts = async () => {
   try {
     const axiosResponse = await axios.get(`/products/products`);
     const data = axiosResponse.data;
+    console.log(data);
     return data;
   } catch (err) {
     throw new Error(err);
@@ -23,13 +24,14 @@ console.log(data);
 export const getProductById = async productId => {
   try {
     const axiosRes = await axios.get(`/products/products/${productId}`);
+    console.log(axiosRes.data);
     return axiosRes.data;
   } catch (err) {
     throw new Error(err);
   }
 };
-const productById = await getProductById(2);
-console.log(productById);
+// const productById = await getProductById(2);
+// console.log(productById);
 
 export const createProduct = async newProduct => {
   try {
@@ -68,12 +70,12 @@ export const updateProductById = async (updatedProduct, productId) => {
 // );
 // console.log(updateProduct);
 
-export const deleteProductById = async (productId) => {
-    try {
-        return axios.delete(`/products/products/${productId}`).data
-    } catch (err) {
-        throw new Error(err)
-    }
+export const deleteProductById = async productId => {
+  try {
+    return axios.delete(`/products/products/${productId}`).data;
+  } catch (err) {
+    throw new Error(err);
+  }
 };
 // await deleteProductById(29)
 // await deleteProductById(32);

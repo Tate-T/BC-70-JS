@@ -25,3 +25,12 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
+
+ul {
+  margin-top: 50px;
+  width: 400px;
+}
+li {
+  margin-bottom: 20px;
+  border: 1px solid black;
+}
