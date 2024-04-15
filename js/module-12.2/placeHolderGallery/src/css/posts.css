@@ -1,0 +1,25 @@
+.posts {
+  width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.posts > li {
+  font-size: 12px;
+  line-height: 1.2;
+  width: 200px;
+}
+.load-btn.is-hidden {
+  display: none;
+}
+button {
+  background-color: white;
+}
+.pag-list {
+  display: flex;
+  gap: 5px;
+}
+.current-page {
+  background-color: grey;
+  color: white;
+}
