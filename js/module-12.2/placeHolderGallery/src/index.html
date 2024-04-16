@@ -9,6 +9,21 @@
   </head>
   <body>
     <!-- <button class="show-posts-btn">Show posts</button> -->
+    <label for="user-select">Скільки постів хочете бачити на сторінці?</label>
+    <select name="user-select" id="user-select">
+      <option value="5">5</option>
+      <option value="10" selected>10</option>
+      <option value="15">15</option>
+      <option value="20">20</option>
+    </select>
+
+    <form class="search-post">
+      <label for="user-post-id">Введіть номер посту </label>
+      <input type="number" name="post_id" id="user-post-id" />
+      <button type="submit">Знайти пост</button>
+      <button type="button" class="show-posts">Показати всі пости</button>
+    </form>
+
     <ul class="posts"></ul>
     <ul class="pag-list"></ul>
     <button class="load-btn is-hidden">Show more</button>
