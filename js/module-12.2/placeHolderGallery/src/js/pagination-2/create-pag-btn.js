@@ -1,7 +1,7 @@
 import { getAllPosts } from './axios-api';
 
-export const createPagBtns = async () => {
-  const limit = 10;
+export const createPagBtns = async (limit = 10) => {
+   
   const allPosts = await getAllPosts();
   const btnsQuantity = Math.ceil(allPosts.length / limit);
   let res = '';
